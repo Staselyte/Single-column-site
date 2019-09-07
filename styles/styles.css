@@ -1,22 +1,24 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
   margin: 40px;
   font-size: 16px;
-  background-image: url(/Users/staselyte/Documents/GitHub/Single-column-site/images/bck2.jpg);
+  background-image: url(/Users/staselyte/Documents/GitHub/Single-column-site/images/memphis-mini.png);
   background-repeat: repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Lora', serif;
+  line-height: 1.3;
 }
 
 
 .layout {
-  width: 50%;
+  width: 650px;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -25,19 +27,25 @@ body {
 
 header {
   width: 100%;
-  height: 15vh;
-  background-repeat: no-repeat;
-  background-image: url(/Users/staselyte/Documents/GitHub/Single-column-site/images/logo.jpg);
-  background-position: 35px;
-  background-size: 180px;
+  height: 110px;
+}
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 4rem;
+  margin: 20px 0 20px 30px;
+  color: #943855;
+  border-bottom: 4px solid #943855;
+  line-height: 1;
+  display: inline-block;
 }
 
 ul {
   display: flex;
   justify-content: flex-start;
   list-style-type: none;
-  background-color: #202060;
-  padding: 15px;
+  background-color: #e16363;
+  padding: 20px;
 }
 
 img {
@@ -46,28 +54,56 @@ img {
 }
 
 h3 {
-  font-size: 3rem;
-  padding: 50px;
+  font-size: 2rem;
+  padding: 40px;
   text-align: left;
-  background-color: #958089;
-  color: white;
+  background-color: #943855;
+  color: #EFEFEF;
   font-weight: 100;
+  text-align: justify;
 }
 
 a {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: white;
-  margin: 0.5rem;
+  margin: 1rem;
+}
+
+a:hover {
+  color: #943855;
+  border-bottom: 2px solid white;
+  transition: 0.3s;
 }
 
 p {
-  padding: 20px 50px;
-  background-color: #958089;
-  font-size: 1.5rem;
+  padding: 15px 40px;
+  background-color: #943855;
+  font-size: 1.3rem;
   color: white;
+  text-align:justify;
 }
 
 q {
   font-size: 2rem;
+  font-style: oblique;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.social li {
+  margin-right: 5px;
+}
+
+a.soc {
+  margin: 0;
+}
+
+a.soc:hover {
+  border-bottom: none;
 }
